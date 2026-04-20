@@ -8,8 +8,8 @@ expediente = "740652"
 nombre_completo = "Jorge Antonio Flores Burgos"
 
 AWS_REGION    = os.getenv("AWS_REGION", "us-east-1")
-SQS_URL       = os.environ["SQS_QUEUE_URL"]
-SNS_TOPIC     = os.environ["SNS_TOPIC_ARN"]
+SQS_URL      = os.getenv("SQS_QUEUE_URL", "")
+SNS_TOPIC    = os.getenv("SNS_TOPIC_ARN", "")
 DDB_TABLE     = os.getenv("DDB_TABLE", "boletines")
 MOSTRADOR_URL = os.getenv("MOSTRADOR_BASE_URL", "http://localhost:8002")
 
